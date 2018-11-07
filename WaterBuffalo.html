@@ -20,28 +20,45 @@
     }
         #header, #footer { display: none; }
         #site { margin: 0 0 0 17.5% !important; padding:0; width: 84%; max-width: 82.5%;}
-        #site, #navID { background-color: rgba(0, 0, 0, 1); 
-                max-height: 100%; height: 100%; display:inline-block; }
-          #navID { width: 14%; position: fixed; z-index: 999; padding: 3.5vh 2vw;}
+        
+        /* Sidebar main frame */
+        #site, #navID { 
+            background-color: rgba(0, 0, 0, 1);
+            max-height: 100%; 
+            height: 100%; 
+            display:inline-block;
+         }
+        #navID { 
+            width: 14%; 
+            position: fixed; 
+            z-index: 999; 
+            padding: 3.5vh 2vw;
+        }
         p, h1, h2, h3, h4, .comment-count, .sqs-block-summary-v2 .summary-excerpt p {font-family: "Lato",sans-serif!important; }
         h1, h2, h3, h4, .comment-count, .menu-block .menu-section, .summary-title-link {color: #e0e0e0!important; }
         p {color: #ddd; }
+
+        /* Content within sidebar */
         .pNav, .sqs-gallery-block-slideshow .meta {
-            border-radius: 5px;}
-        .pNav {
-        border: 4px #e0e0e0 solid;
-        height: 92vh;
-        font-family: "Lato",sans-serif;
-        font-weight: 100;
-        color: #e0e0e0;
+            border-radius: 5px;
         }
-        
+    
+        .pNav {
+            border: 4px #e0e0e0 solid;
+            height: 92vh;
+            /* Standardize font */
+            font-family: "Lato",sans-serif;
+            font-weight: 100;
+            color: #e0e0e0;
+        }
+        /* Standardize link style */     
         nav.pNav a {
         text-align: left;
         padding: 0 0vw 1.4vw 2.3vw;
         display: block;
         color: #e0e0e0;
         }
+        /* Customize Logo style */
         nav.pNav #blogo { padding: 50px 1.7vw 15px; }
         nav.pNav a:hover, .contact a:hover { color: #888; }
         nav.pNav a .fas, nav.pNav a .fab { margin-right: 10px;}
@@ -168,7 +185,10 @@
 
 
     <div id="navID">
+            <!–– Responsive Menu ––> 
             <a class="bars"><i class="fas fa-bars"></i></a>
+
+            <!–– Desktop Menu ––> 
             <nav class="pNav">
                 <a id="blogo" href="#"><img id="plogo" src="https://www.thewaterbuffalo.com.hk/WEFiles/Image/WEImage/WebpageBanner-WE522255ed95.jpg"/></a>
                 <a href="#foodmenu"><i class="fas fa-book-open"></i>Food Menu</a>
