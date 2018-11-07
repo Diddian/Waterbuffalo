@@ -1,0 +1,242 @@
+<title>The Water Buffalo - British Restaurant & Brewpub</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+
+
+
+<style>
+        html {
+      scroll-behavior: smooth!important;
+    }
+        #header, #footer { display: none; }
+        #site { margin: 0 0 0 17.5% !important; padding:0; width: 84%; max-width: 82.5%;}
+        #site, #navID { background-color: rgba(0, 0, 0, 1); 
+                max-height: 100%; height: 100%; display:inline-block; }
+          #navID { width: 14%; position: fixed; z-index: 999; padding: 3.5vh 2vw;}
+        p, h1, h2, h3, h4, .comment-count, .sqs-block-summary-v2 .summary-excerpt p {font-family: "Lato",sans-serif!important; }
+        h1, h2, h3, h4, .comment-count, .menu-block .menu-section, .summary-title-link {color: #e0e0e0!important; }
+        p {color: #ddd; }
+        .pNav, .sqs-gallery-block-slideshow .meta {
+            border-radius: 5px;}
+        .pNav {
+        border: 4px #e0e0e0 solid;
+        height: 92vh;
+        font-family: "Lato",sans-serif;
+        font-weight: 100;
+        color: #e0e0e0;
+        }
+        
+        nav.pNav a {
+        text-align: left;
+        padding: 0 0vw 1.4vw 2.3vw;
+        display: block;
+        color: #e0e0e0;
+        }
+        nav.pNav #blogo { padding: 50px 1.7vw 15px; }
+        nav.pNav a:hover, .contact a:hover { color: #888; }
+        nav.pNav a .fas, nav.pNav a .fab { margin-right: 10px;}
+    
+        hr { width: 80%; text-align: center; margin: 1vh auto 3vh; opacity: .3; }
+        .ohDIV {
+        max-height: 100%;
+        overflow-y: hidden;
+        }
+    /* when screen is too short */
+    @media only screen and (max-height: 725px) {
+        .ohDIV {
+        max-height: 28vh;
+        overflow-y: scroll;
+    }
+        }
+    
+    
+    
+        .pNav a.oh {line-height: 1.4;}
+        .contact a {
+        text-align: center;
+        padding: 0;
+        display: inline-block;
+        width: 2vw;
+        color: #e0e0e0;
+        }
+        .contact {
+        margin: -6vh auto 0;
+        text-align: center;
+        padding: 0 14px 0 15px;
+        }
+    
+      #plogo { width: 10vw; height: auto; padding-bottom: 20px; }
+      .collection-type-page #page {
+        max-width: 96%;
+        padding: 3vh 0 10vh;
+        margin: 0 auto;
+    }
+    @media only screen and (min-height: 826px) {
+    .collection-type-page #page {
+        padding-top: 5.5vh;
+    }}
+    [class*="sqs-col"] .sqs-block {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    [class*="sqs-col"] .sqs-block:not(:first-child) {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    [class*="sqs-col"] .sqs-block.image-block,
+    [class*="sqs-col"] .sqs-block.gallery-block {
+        max-width: 100%;
+    }
+    [class*="sqs-col"] .sqs-block.summary-v2-block {
+        max-width: 90%;
+    }
+    
+    /* Vision */
+    .sqs-block-button-element--small {
+    border-radius: 5px;
+    font-family: "Lota",sans-serif;
+    background-color: transparent!important;
+    border-color: #e0e0e0!important;
+    border: 1px solid!important;
+    }
+    /* REAL ALE*/
+    .summary-title-link {
+        text-transform: uppercase !important;
+    }
+    /* hamburger */
+    .bars { display: none;}
+
+    /* mobile */
+    @media only screen and (max-width: 600px) {
+    #site { margin: 0 !important; padding:0!important; width: 100%; max-width: 100%;}
+    #navID {  width: 50vw; padding: 1.5vh 2vw 1.5vh 0; background-color: transparent; }
+          .pNav{ left: -55vw; width: 50vw; padding:0;background: black; position: fixed;}
+        .pNav > a:nth-child(1) { padding-top: 10vh; }
+        #plogo {width: 100%; padding-top:2vh;}
+        .contact { background: black;  bottom:0; margin: 0!important; padding: 10px 0 5px!important; width: 100%; position: fixed;}
+        .contact a {width: 17%;}
+        nav:nth-child(1) { display:none; }
+        .pNav { display: block !important; height: 90%;}
+        nav.pNav a { padding: 0 0vw 2vh 6vw; }
+    [class*="sqs-col"] .sqs-block:not(:first-child), 
+    [class*="sqs-col"] .sqs-block.summary-v2-block { max-width: 80%;
+    margin: 0 auto; }
+    .bars { display: block; font-size: 23px; position: fixed; padding: 7px 10px 5px;right: 0;bottom: 10%;background: black;color: #e0e0e0;border-radius: 5px 0 0 5px;}
+    .sqs-gallery-controls .previous, .sqs-gallery-controls .next {
+        z-index: 996;
+    }
+    .contact .fas, .contact .fab {font-size:20px;}
+    }
+
+    .sqs-block-summary-v2 .summary-excerpt {
+    margin-bottom:20px;
+    max-height: 17vh;
+    overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: black !important;
+    }
+    ::-webkit-scrollbar:vertical {
+        width: 10px;
+    }
+    ::-webkit-scrollbar:horizontal {
+        height: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    ::-webkit-scrollbar-track {
+       border-radius: 10px;
+       background-color: black;
+    }
+      </style>
+    
+
+
+
+    <div id="navID">
+            <a class="bars"><i class="fas fa-bars"></i></a>
+            <nav class="pNav">
+              <a id="blogo" href="#"><img id="plogo" src="https://www.thewaterbuffalo.com.hk/WEFiles/Image/WEImage/WebpageBanner-WE522255ed95.jpg"/></a>
+              <a href="#foodmenu"><i class="fas fa-book-open"></i>Food Menu</a>
+              <a href="#drinksmenu"><i class="fas fa-glass-martini-alt"></i>Drinks Menu</a>
+              <a href="#realale"><i class="fas fa-beer"></i>Real Ale</a>
+              <a href="#vision"><i class="fas fa-hand-pointer"></i>Story & Vision</a>
+              <hr>
+              <div class="ohDIV">
+              <a class="oh" href="#">Tues - Fri</br>5 - 11pm</a>
+              <a class="oh" href="#">HH for weekdays</br>5 - 8pm</a>
+              <a class="oh"  href="#">Sat - Sun</br>11am - 11pm</a>
+              <a class="oh"  href="#">Last food orders</br>9.30pm</a>
+              <a class="oh" href="https://www.google.com/maps?ll=22.244055,113.978633&z=15&t=m&hl=en-GB&gl=HK&mapclient=embed&cid=11451081582545007556" target="_blank">13 Lo Wai Tsuen,</br>Pui O</a>
+            </div>
+            </nav>
+                <div class="contact">
+                    <a href="telto:+85221093331"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:info@thewaterbuffalo.com.hk"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.google.com/maps?ll=22.244055,113.978633&z=15&t=m&hl=en-GB&gl=HK&mapclient=embed&cid=11451081582545007556"target="_blank"><i class="fas fa-map-marker-alt"></i></i></a>
+                    <a href="https://www.facebook.com/thewaterbuffalohk" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/thewaterbuffalohk/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+
+
+
+
+<script>
+      jQuery(document).ready(function(a) {
+    
+
+        a(".bars").click(
+            function(){
+                a(".pNav").animate({
+                left: "0vw"
+                }, 400);
+                a(".bars i").removeClass("fa-bars").addClass("fa-times").addclass();
+            });
+
+        a("#page, .pNav, .pNav a").click(
+            function() {
+                a(".pNav").animate({
+                left: "-55vw"
+                }, 400);
+                a(".bars i").removeClass("fa-times").addClass("fa-bars");
+            });
+        a("a.summary-title-link").click(function(e) {
+            e.preventDefault();
+        });
+            
+    if (a(window).width() < 600) {
+        a("#blogo").remove().insertBefore(a(".sqs-layout"))
+        }
+    });
+
+    var linkUrl = $(".testClick").attr("href");
+    
+    if (window.url("twitter") > -1) {
+       console.log("URL contains twitter");
+    }
+
+    $(function() {
+    $('.ms-webpart-titleText').each(function() {
+        var link = $(this).find('a');
+        var url = window.location.href;
+        if (link.length == url)
+            $(this).text(link.text()); 
+    });
+
+     $(location).attr('href');
+     alert(window.location);
+});
+</script>
+
+
+
+
+
